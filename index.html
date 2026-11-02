@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insurance Advisor | Kotak</title>
 <meta name="description" content="Independent insurance advisor. Term, health, savings and retirement plans explained plainly. Call or WhatsApp for a free review.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A2A5C'/%3E%3Ccircle cx='50' cy='14' r='9' fill='%23E4002B'/%3E%3Ctext x='28' y='46' font-family='Arial,sans-serif' font-size='36' font-weight='700' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -25,7 +26,8 @@ h1,h2,h3{font-family:var(--head);line-height:1.1;letter-spacing:-.02em}
 /* Header */
 header{background:var(--deep);color:var(--white)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{font-family:var(--head);font-weight:700;font-size:1.05rem;text-decoration:none}
+.brand{font-family:var(--head);font-weight:700;font-size:1.05rem;text-decoration:none;display:flex;align-items:center}
+.logo{display:none;height:34px;width:auto;background:#fff;border-radius:6px;padding:4px 9px;margin-right:12px}
 .brand i{display:inline-block;width:10px;height:10px;background:var(--red);border-radius:50%;margin-right:9px}
 nav{display:flex;gap:22px;font-size:.95rem}
 nav a{text-decoration:none;opacity:.85}
@@ -65,6 +67,29 @@ section{padding:72px 0}
 .facts{border-left:4px solid var(--red);padding-left:22px;display:grid;gap:20px}
 .facts b{display:block;font-family:var(--head);font-size:2rem;color:var(--navy);line-height:1}
 .facts span{font-size:.95rem;color:#44506B}
+
+
+/* Featured wealth plans */
+.wealth{background:var(--paper)}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px}
+.feature.blue{border-top-color:var(--navy)}
+.feature{border-radius:18px;padding:28px;background:var(--white);border-top:6px solid var(--red);box-shadow:0 10px 30px rgba(10,42,92,.08)}
+.feature.navy{background:var(--navy);color:#fff;border-top-color:#fff}
+.feature h3{font-size:1.45rem;color:var(--navy)}
+.feature.navy h3{color:#fff}
+.feature .kind{margin-top:4px;font-size:.95rem;color:#5A6785}
+.feature.navy .kind{color:#BFCBE2}
+.feature p.what{margin-top:16px}
+.feature ul{margin:18px 0 0 18px;display:grid;gap:8px}
+.feature .best{margin-top:20px;padding-top:16px;border-top:1px solid var(--mist);font-size:.95rem}
+.feature.navy .best{border-top-color:rgba(255,255,255,.25)}
+.feature .uin{margin-top:10px;font-size:.8rem;color:#5A6785}
+.feature.navy .uin{color:#BFCBE2}
+.feature .btn{margin-top:20px}
+.feature .btn.line{border-color:var(--navy);color:var(--navy)}
+.feature .btn.line:hover{background:var(--navy);color:#fff}
+.feature.navy .btn.line{border-color:#fff;color:#fff}
+.feature.navy .btn.line:hover{background:#fff;color:var(--navy)}
 
 /* Plans */
 .plans{background:var(--white)}
@@ -111,7 +136,7 @@ footer p+p{margin-top:8px}
   .hero{padding-bottom:100px}
   .hero::after{width:260px;height:260px;right:-90px;top:-100px}
   .steps{grid-template-columns:1fr 1fr}
-  .plan-body{grid-template-columns:1fr}
+  .plan-body,.feature-grid{grid-template-columns:1fr}
   section{padding:56px 0}
 }
 @media(max-width:480px){.steps{grid-template-columns:1fr}}
@@ -122,9 +147,9 @@ footer p+p{margin-top:8px}
 
 <header>
   <div class="wrap">
-    <a class="brand" href="#top"><i></i><span data-field="name">Your Name</span></a>
+    <a class="brand" href="#top"><img class="logo" src="kotak-logo.png" alt="Kotak Life" onload="this.style.display='block'" onerror="this.remove()"><i></i><span data-field="name">Your Name</span></a>
     <nav>
-      <a href="#about">About</a><a href="#plans">Plans</a><a href="#process">How I work</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#wealth">Wealth plans</a><a href="#plans">Plans</a><a href="#process">How I work</a><a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -141,10 +166,10 @@ footer p+p{margin-top:8px}
         </div>
       </div>
       <aside class="card" aria-label="Contact details">
-        <h2 data-field="name">Emerson</h2>
+        <h2 data-field="name">Your Name</h2>
         <p class="role"><span data-field="insurer">Kotak Life</span> insurance advisor</p>
         <dl>
-          <div><dt>Mobile</dt><dd><a data-link="tel" data-field="phoneShow" href="#contact">+91 9444510089</a></dd></div>
+          <div><dt>Mobile</dt><dd><a data-link="tel" data-field="phoneShow" href="#contact">+91 00000 00000</a></dd></div>
           <div><dt>Email</dt><dd><a data-link="mail" data-field="email" href="#contact">you@example.com</a></dd></div>
           <div><dt>Based in</dt><dd data-field="city">Your City</dd></div>
           <div><dt>IRDAI licence no.</dt><dd data-field="licence">XXXXXXXX</dd></div>
@@ -165,6 +190,55 @@ footer p+p{margin-top:8px}
         <div><b data-field="clients">0+</b><span>families I look after</span></div>
         <div><b>Free</b><span>needs review, no obligation</span></div>
       </div>
+    </div>
+  </section>
+
+  <section id="wealth" class="wealth">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Top wealth plans I recommend</h2>
+        <p>Three Kotak Life savings plans that clients ask about most. GAIN and Fortune Maximiser are participating plans, so their bonuses are not guaranteed. Assured Savings Plan offers guaranteed benefits.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>Kotak Get Assured Income Now (GAIN)</h3>
+          <p class="kind">Limited pay, participating savings plan</p>
+          <p class="what">A plan built around regular income for your family, with income benefits that can begin as early as the end of the first policy year.</p>
+          <ul>
+            <li>Three plan options: Early Income, Paid-Up Addition and Premium Saver</li>
+            <li>Life cover until age 85</li>
+            <li>Optional riders for extra protection</li>
+          </ul>
+          <p class="best"><b>Good fit if</b> you want a steady income stream along with long-term cover.</p>
+          <a class="btn red" data-link="wa" href="#contact" data-msg="Hi, I would like to know more about Kotak GAIN (Get Assured Income Now).">Ask about GAIN</a>
+        </article>
+        <article class="feature navy">
+          <h3>Kotak Fortune Maximiser</h3>
+          <p class="kind">Limited pay, participating endowment plan</p>
+          <p class="what">A customisable plan for building a corpus for a goal, with a choice of how you receive your bonus.</p>
+          <ul>
+            <li>Three plan options: Life Goal, Bright Future and Golden Years Maximiser</li>
+            <li>Bonus payout choice: immediate cash, deferred cash or paid-up additions</li>
+            <li>Life cover up to age 85, with optional riders</li>
+          </ul>
+          <p class="best"><b>Good fit if</b> you are saving for a goal such as education, a milestone or retirement.</p>
+          <p class="uin">UIN: 107N125V03</p>
+          <a class="btn line" data-link="wa" href="#contact" data-msg="Hi, I would like to know more about Kotak Fortune Maximiser.">Ask about Fortune Maximiser</a>
+        </article>
+        <article class="feature blue">
+          <h3>Kotak Assured Savings Plan</h3>
+          <p class="kind">Non-participating, non-linked savings plan</p>
+          <p class="what">A simple plan for people who want to know their maturity amount upfront, with life cover while you save.</p>
+          <ul>
+            <li>Guaranteed maturity benefit, plus guaranteed yearly additions and a guaranteed loyalty addition</li>
+            <li>Pay premiums for a shorter period: 5, 6, 7 or 10 years</li>
+            <li>Optional riders for term, accidental death and disability cover</li>
+          </ul>
+          <p class="best"><b>Good fit if</b> you prefer certainty over market or bonus-linked returns.</p>
+          <a class="btn red" data-link="wa" href="#contact" data-msg="Hi, I would like to know more about Kotak Assured Savings Plan.">Ask about Assured Savings</a>
+        </article>
+      </div>
+      <p class="note">Bonuses under participating plans depend on the company's performance and are not guaranteed. Guaranteed benefits are payable as per policy terms, provided all due premiums are paid. Please read the sales brochure and policy terms for benefits, charges and exclusions before buying.</p>
     </div>
   </section>
 
@@ -262,10 +336,10 @@ var CONFIG = {
   name: "Emerson",
   insurer: "Kotak Life",
   phone: "919444510089",          // country code + number, digits only
-  phoneShow: "+91 9444510089",   // how the number appears on the page
+  phoneShow: "+91 94445 10089",   // how the number appears on the page
   email: "emerson.bagavathsingh@gmail.com",
   city: "Chennai",
-  licence: "XXXXXXXX",
+  licence: "60350380",
   years: "2+",
   clients: "100+",
   waMessage: "Hi, I would like to review my insurance cover."
@@ -279,7 +353,7 @@ document.querySelectorAll("[data-link]").forEach(function(el){
   var t = el.dataset.link;
   if (t === "tel") el.href = "tel:+" + CONFIG.phone;
   if (t === "mail") el.href = "mailto:" + CONFIG.email;
-  if (t === "wa") { el.href = "https://wa.me/" + CONFIG.phone + "?text=" + encodeURIComponent(CONFIG.waMessage); el.target = "_blank"; el.rel = "noopener"; }
+  if (t === "wa") { el.href = "https://wa.me/" + CONFIG.phone + "?text=" + encodeURIComponent(el.dataset.msg || CONFIG.waMessage); el.target = "_blank"; el.rel = "noopener"; }
 });
 document.title = CONFIG.name + " | " + CONFIG.insurer + " Insurance Advisor";
 </script>
