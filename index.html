@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insurance Advisor | Kotak</title>
+<meta name="description" content="Independent insurance advisor. Term, health, savings and retirement plans explained plainly. Call or WhatsApp for a free review.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A2A5C; --deep:#071B3D; --red:#E4002B; --paper:#F5F7FB; --ink:#14213D; --mist:#DCE4F0; --white:#fff;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;padding-bottom:76px}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);line-height:1.1;letter-spacing:-.02em}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* Header */
+header{background:var(--deep);color:var(--white)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:var(--head);font-weight:700;font-size:1.05rem;text-decoration:none}
+.brand i{display:inline-block;width:10px;height:10px;background:var(--red);border-radius:50%;margin-right:9px}
+nav{display:flex;gap:22px;font-size:.95rem}
+nav a{text-decoration:none;opacity:.85}
+nav a:hover{opacity:1;text-decoration:underline}
+
+/* Hero */
+.hero{background:var(--navy);color:var(--white);position:relative;padding:64px 0 120px;clip-path:polygon(0 0,100% 0,100% 88%,0 100%)}
+.hero::after{content:"";position:absolute;right:-120px;top:-140px;width:420px;height:420px;border-radius:50%;background:var(--red);opacity:.9}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:800;max-width:14ch}
+.hero p.lead{margin-top:20px;max-width:46ch;font-size:1.12rem;color:#D5DEEE}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;border:2px solid transparent;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn.red{background:var(--red);color:#fff}
+.btn.red:hover{background:#c40025}
+.btn.line{border-color:#fff;color:#fff}
+.btn.line:hover{background:#fff;color:var(--navy)}
+.card{background:var(--white);color:var(--ink);border-radius:18px;padding:26px;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+.card h2{font-size:1.25rem}
+.card .role{color:#5A6785;font-size:.95rem;margin-bottom:14px}
+.card dl{display:grid;gap:12px}
+.card dt{font-size:.85rem;color:#5A6785}
+.card dd{font-weight:600;word-break:break-word}
+.card dd a{text-decoration:none;color:var(--navy)}
+.card dd a:hover{text-decoration:underline}
+
+/* Sections */
+section{padding:72px 0}
+.sec-head{max-width:60ch;margin-bottom:34px}
+.sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);color:var(--navy)}
+.sec-head p{margin-top:12px;color:#44506B}
+
+/* About */
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+.about p+p{margin-top:14px}
+.facts{border-left:4px solid var(--red);padding-left:22px;display:grid;gap:20px}
+.facts b{display:block;font-family:var(--head);font-size:2rem;color:var(--navy);line-height:1}
+.facts span{font-size:.95rem;color:#44506B}
+
+/* Plans */
+.plans{background:var(--white)}
+.plan-list{border-top:1px solid var(--mist)}
+details{border-bottom:1px solid var(--mist)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:6px 20px;padding:22px 4px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary h3{font-size:1.35rem;color:var(--navy)}
+summary p{grid-column:1;color:#44506B;font-size:.98rem}
+summary::after{content:"+";grid-row:1/3;grid-column:2;font-size:1.8rem;line-height:1;color:var(--red);font-family:var(--head);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+.plan-body{padding:0 4px 24px;display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px}
+.plan-body h4{font-size:.9rem;color:var(--red);margin-bottom:4px}
+.plan-body p{font-size:.97rem}
+.note{margin-top:22px;font-size:.93rem;color:#44506B}
+
+/* Process */
+.steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.steps li{counter-increment:s;border-top:3px solid var(--navy);padding-top:14px}
+.steps li::before{content:counter(s);display:block;font-family:var(--head);font-weight:800;font-size:1.6rem;color:var(--red)}
+.steps h3{font-size:1.15rem;margin:4px 0 6px;color:var(--navy)}
+.steps p{font-size:.95rem;color:#44506B}
+
+/* Contact */
+.contact{background:var(--navy);color:#fff;clip-path:polygon(0 8%,100% 0,100% 100%,0 100%);padding-top:110px}
+.contact h2{font-size:clamp(1.9rem,4vw,2.8rem);max-width:18ch}
+.contact p{margin-top:12px;color:#D5DEEE;max-width:48ch}
+.contact .rows{margin-top:28px;display:grid;gap:10px;font-size:1.05rem}
+.contact .rows a{text-decoration:none;font-weight:600}
+.contact .rows a:hover{text-decoration:underline}
+
+footer{background:var(--deep);color:#AEBBD3;font-size:.85rem;padding:30px 0}
+footer p+p{margin-top:8px}
+
+/* Mobile action bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(7,27,61,.96)}
+.bar .btn{flex:1;justify-content:center;padding:12px}
+.bar .btn.wa{background:#fff;color:var(--navy)}
+
+@media(min-width:861px){.bar{display:none}body{padding-bottom:0}}
+@media(max-width:860px){
+  nav{display:none}
+  .hero .wrap,.about{grid-template-columns:1fr}
+  .hero{padding-bottom:100px}
+  .hero::after{width:260px;height:260px;right:-90px;top:-100px}
+  .steps{grid-template-columns:1fr 1fr}
+  .plan-body{grid-template-columns:1fr}
+  section{padding:56px 0}
+}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><i></i><span data-field="name">Your Name</span></a>
+    <nav>
+      <a href="#about">About</a><a href="#plans">Plans</a><a href="#process">How I work</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Insurance that fits your family, explained plainly.</h1>
+        <p class="lead">I help families and professionals choose life, health and savings cover they actually understand, and I stay with you through paperwork and claims.</p>
+        <div class="btns">
+          <a class="btn red" data-link="tel" href="#contact">Call me</a>
+          <a class="btn line" data-link="wa" href="#contact">WhatsApp me</a>
+        </div>
+      </div>
+      <aside class="card" aria-label="Contact details">
+        <h2 data-field="name">Emerson</h2>
+        <p class="role"><span data-field="insurer">Kotak Life</span> insurance advisor</p>
+        <dl>
+          <div><dt>Mobile</dt><dd><a data-link="tel" data-field="phoneShow" href="#contact">+91 9444510089</a></dd></div>
+          <div><dt>Email</dt><dd><a data-link="mail" data-field="email" href="#contact">you@example.com</a></dd></div>
+          <div><dt>Based in</dt><dd data-field="city">Your City</dd></div>
+          <div><dt>IRDAI licence no.</dt><dd data-field="licence">XXXXXXXX</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <div class="sec-head"><h2>Advice you can ask anything</h2></div>
+        <p>Write two or three sentences about yourself here: how long you have been advising, the kind of clients you work with, and why you do this work.</p>
+        <p>Keep it personal and specific. Clients choose an advisor they trust, so say how you work and what they can expect from you after the policy is issued.</p>
+      </div>
+      <div class="facts">
+        <div><b data-field="years">0+</b><span>years advising families</span></div>
+        <div><b data-field="clients">0+</b><span>families I look after</span></div>
+        <div><b>Free</b><span>needs review, no obligation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans" class="plans">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What I can help you with</h2>
+        <p>Tap a topic to see who it suits. I will recommend specific plans after we talk about your goals.</p>
+      </div>
+      <div class="plan-list">
+        <details open>
+          <summary><h3>Term protection</h3><p>Pure life cover for your family's income and loans.</p></summary>
+          <div class="plan-body">
+            <div><h4>Who it suits</h4><p>Anyone with dependents, a home loan or a steady income to protect.</p></div>
+            <div><h4>Good to know</h4><p>Starting young keeps the premium lower. Add your plan name and key features here.</p></div>
+          </div>
+        </details>
+        <details>
+          <summary><h3>Health cover</h3><p>Hospital costs handled without draining savings.</p></summary>
+          <div class="plan-body">
+            <div><h4>Who it suits</h4><p>Individuals, families and parents who want cover beyond an employer policy.</p></div>
+            <div><h4>Good to know</h4><p>Check waiting periods and room-rent limits. Add your plan details here.</p></div>
+          </div>
+        </details>
+        <details>
+          <summary><h3>Savings and guaranteed plans</h3><p>Disciplined saving for goals with life cover attached.</p></summary>
+          <div class="plan-body">
+            <div><h4>Who it suits</h4><p>People who prefer a fixed, planned route to a future goal.</p></div>
+            <div><h4>Good to know</h4><p>Compare lock-in, payout dates and charges first. Add your plan details here.</p></div>
+          </div>
+        </details>
+        <details>
+          <summary><h3>Retirement and pension</h3><p>A steady income after you stop working.</p></summary>
+          <div class="plan-body">
+            <div><h4>Who it suits</h4><p>Salaried and self-employed people planning for the years after work.</p></div>
+            <div><h4>Good to know</h4><p>The earlier you begin, the smaller the monthly amount. Add your plan details here.</p></div>
+          </div>
+        </details>
+        <details>
+          <summary><h3>Child future plans</h3><p>Education and milestone funds, protected if life changes.</p></summary>
+          <div class="plan-body">
+            <div><h4>Who it suits</h4><p>Parents planning for school, college or a child's big milestones.</p></div>
+            <div><h4>Good to know</h4><p>Look for premium waiver options. Add your plan details here.</p></div>
+          </div>
+        </details>
+      </div>
+      <p class="note">Plan features, returns and eligibility depend on the product and your profile. Please read the sales brochure and policy terms before buying.</p>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head"><h2>How we work together</h2></div>
+      <ol class="steps">
+        <li><h3>We talk</h3><p>A short call or meeting about your family, income and goals.</p></li>
+        <li><h3>I compare</h3><p>You see a few suitable options with costs and trade-offs in plain words.</p></li>
+        <li><h3>You decide</h3><p>No pressure. I help with forms and documents once you choose.</p></li>
+        <li><h3>I stay in touch</h3><p>Renewals, changes and claims support whenever you need it.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let's review your cover</h2>
+      <p>Send a message or call and tell me what you are planning for. The first conversation is free.</p>
+      <div class="btns">
+        <a class="btn red" data-link="tel" href="#contact">Call me</a>
+        <a class="btn line" data-link="wa" href="#contact">WhatsApp me</a>
+      </div>
+      <div class="rows">
+        <a data-link="tel" data-field="phoneShow" href="#contact">+91 00000 00000</a>
+        <a data-link="mail" data-field="email" href="#contact">you@example.com</a>
+        <span data-field="city">Your City</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span data-field="name">Your Name</span>, <span data-field="insurer">Kotak Life</span> insurance advisor. IRDAI licence no. <span data-field="licence">XXXXXXXX</span>.</p>
+    <p>Insurance is the subject matter of solicitation. This is a personal advisor website and not the official website of Kotak Mahindra. Product details are indicative; please read the sales brochure and policy documents carefully before concluding a sale.</p>
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="btn red" data-link="tel" href="#contact">Call</a>
+  <a class="btn wa" data-link="wa" href="#contact">WhatsApp</a>
+</div>
+
+<script>
+/* EDIT YOUR DETAILS HERE. Everything on the page updates from this block. */
+var CONFIG = {
+  name: "Your Name",
+  insurer: "Kotak Life",
+  phone: "919444510089",          // country code + number, digits only
+  phoneShow: "+91 9444510089",   // how the number appears on the page
+  email: "emerson.bagavathsingh@gmail.com",
+  city: "Chennai",
+  licence: "XXXXXXXX",
+  years: "2+",
+  clients: "100+",
+  waMessage: "Hi, I would like to review my insurance cover."
+};
+
+document.querySelectorAll("[data-field]").forEach(function(el){
+  var v = CONFIG[el.dataset.field];
+  if (v) el.textContent = v;
+});
+document.querySelectorAll("[data-link]").forEach(function(el){
+  var t = el.dataset.link;
+  if (t === "tel") el.href = "tel:+" + CONFIG.phone;
+  if (t === "mail") el.href = "mailto:" + CONFIG.email;
+  if (t === "wa") { el.href = "https://wa.me/" + CONFIG.phone + "?text=" + encodeURIComponent(CONFIG.waMessage); el.target = "_blank"; el.rel = "noopener"; }
+});
+document.title = CONFIG.name + " | " + CONFIG.insurer + " Insurance Advisor";
+</script>
+</body>
+</html>
