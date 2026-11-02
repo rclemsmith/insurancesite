@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kotak GAIN (Get Assured Income Now) | Kotak Life Insurance</title>
+<meta name="description" content="Kotak GAIN offers regular income starting as early as Month 1 or Year 1, life cover up to age 85, and flexible compounding options. Explore benefits, eligibility, and quotes.">
+<link rel="icon" type="image/png" href="kotak-logo.png">
+<link rel="apple-touch-icon" href="kotak-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A2A5C; --deep:#071B3D; --red:#E4002B; --paper:#F5F7FB; --ink:#14213D; --mist:#DCE4F0; --white:#fff;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;padding-bottom:76px}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--head);line-height:1.15;letter-spacing:-.02em}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* Header */
+header{background:var(--deep);color:var(--white);position:sticky;top:0;z-index:30}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:var(--head);font-weight:700;font-size:1.05rem;text-decoration:none;display:flex;align-items:center}
+.logo{display:none;height:34px;width:auto;background:#fff;border-radius:6px;padding:4px 9px;margin-right:12px}
+.brand i{display:inline-block;width:10px;height:10px;background:var(--red);border-radius:50%;margin-right:9px}
+nav{display:flex;align-items:center;gap:18px;font-size:.95rem}
+nav a{text-decoration:none;opacity:.9;font-weight:500;transition:opacity .15s}
+nav a:hover{opacity:1;text-decoration:underline}
+.back-link{display:inline-flex;align-items:center;gap:6px;color:#fff}
+
+/* Buttons */
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;border:2px solid transparent;transition:transform .15s, background-color .15s}
+.btn:active{transform:scale(.97)}
+.btn.red{background:var(--red);color:#fff}
+.btn.red:hover{background:#c40025}
+.btn.line{border-color:#fff;color:#fff}
+.btn.line:hover{background:#fff;color:var(--navy)}
+.btn.outline-navy{border-color:var(--navy);color:var(--navy)}
+.btn.outline-navy:hover{background:var(--navy);color:#fff}
+
+/* Plan Hero (compact, no clip-path polygon, no circular decoration) */
+.plan-hero{background:var(--navy);color:var(--white);padding:52px 0 58px}
+.plan-hero .wrap{display:grid;gap:18px}
+.badge-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.type-badge{display:inline-block;background:rgba(255,255,255,.15);color:#fff;font-size:.82rem;font-weight:600;padding:5px 12px;border-radius:999px;letter-spacing:.02em;text-transform:uppercase}
+.uin-text{font-size:.85rem;color:#BFCBE2}
+.plan-hero h1{font-size:clamp(2.1rem,4.8vw,3.4rem);font-weight:800;color:#fff}
+.hero-lead{font-size:1.22rem;color:#D5DEEE;max-width:52ch;line-height:1.45;font-weight:500}
+.usp-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.usp-chip{display:inline-flex;align-items:center;gap:7px;background:rgba(7,27,61,.6);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:6px 14px;font-size:.88rem;color:#E1E8F5}
+.usp-chip span.dot{width:7px;height:7px;border-radius:50%;background:var(--red)}
+
+/* Section Layouts */
+section{padding:68px 0}
+.sec-head{max-width:64ch;margin-bottom:34px}
+.sec-head h2{font-size:clamp(1.75rem,3.4vw,2.4rem);color:var(--navy)}
+.sec-head p{margin-top:12px;color:#44506B;font-size:1.05rem}
+
+/* Overview */
+.overview{background:var(--white)}
+.overview-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:start}
+.overview-text p{color:#2C384E;font-size:1.02rem}
+.overview-text p+p{margin-top:16px}
+.highlight-panel{background:var(--paper);border-left:4px solid var(--red);border-radius:0 18px 18px 0;padding:26px;display:grid;gap:18px}
+.highlight-item b{display:block;font-size:1.05rem;color:var(--navy);font-family:var(--head);margin-bottom:4px}
+.highlight-item span{font-size:.92rem;color:#44506B;display:block;line-height:1.45}
+
+/* Key Benefits */
+.benefits{background:var(--paper)}
+.benefit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.benefit-card{background:var(--white);border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(10,42,92,.06);border-top:5px solid var(--navy);display:flex;flex-direction:column}
+.benefit-card.accent{border-top-color:var(--red)}
+.benefit-tag{font-size:.8rem;font-weight:700;text-transform:uppercase;color:var(--red);letter-spacing:.03em;margin-bottom:8px}
+.benefit-card h3{font-size:1.3rem;color:var(--navy);margin-bottom:12px}
+.benefit-card p{color:#44506B;font-size:.95rem;line-height:1.55}
+
+/* Plan Options */
+.options{background:var(--white)}
+.options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.option-card{background:var(--paper);border-radius:18px;padding:30px;border:1px solid var(--mist);display:flex;flex-direction:column;position:relative}
+.option-card.popular{border:2px solid var(--red);background:#fff;box-shadow:0 12px 32px rgba(228,0,43,.08)}
+.option-tag{position:absolute;top:-12px;right:24px;background:var(--red);color:#fff;font-size:.75rem;font-weight:700;padding:4px 12px;border-radius:999px;text-transform:uppercase;letter-spacing:.03em}
+.option-card h3{font-size:1.38rem;color:var(--navy)}
+.option-card .subtitle{font-size:.92rem;color:var(--red);font-weight:600;margin:6px 0 14px}
+.option-card .desc{font-size:.96rem;color:#333E52;margin-bottom:18px}
+.option-card ul{list-style:none;margin-top:auto;display:grid;gap:10px;padding-top:16px;border-top:1px solid var(--mist)}
+.option-card li{position:relative;padding-left:22px;font-size:.92rem;color:#44506B}
+.option-card li::before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:700}
+
+/* Eligibility Table */
+.eligibility{background:var(--paper)}
+.table-wrap{background:var(--white);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(10,42,92,.06);border:1px solid var(--mist)}
+table{width:100%;border-collapse:collapse;text-align:left;font-size:.98rem}
+thead th{background:var(--deep);color:#fff;padding:16px 20px;font-family:var(--head);font-weight:600;font-size:1.02rem}
+tbody tr:nth-child(even){background:var(--paper)}
+tbody tr:nth-child(odd){background:var(--white)}
+tbody td{padding:16px 20px;border-bottom:1px solid var(--mist);color:#333E52}
+tbody tr:last-child td{border-bottom:none}
+td.param{font-weight:600;color:var(--navy);width:34%}
+
+/* How It Works */
+.how-it-works{background:var(--white)}
+.steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.steps li{counter-increment:s;background:var(--paper);border-radius:18px;padding:26px;position:relative;border-top:4px solid var(--navy)}
+.steps li::before{content:counter(s);display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;background:var(--navy);color:#fff;border-radius:50%;font-family:var(--head);font-weight:800;font-size:1.15rem;margin-bottom:14px}
+.steps li:nth-child(2){border-top-color:var(--red)}
+.steps li:nth-child(2)::before{background:var(--red)}
+.steps li:nth-child(4){border-top-color:var(--red)}
+.steps li:nth-child(4)::before{background:var(--red)}
+.steps h3{font-size:1.15rem;color:var(--navy);margin-bottom:8px}
+.steps p{font-size:.92rem;color:#44506B;line-height:1.5}
+
+/* Premium Payment Modes */
+.modes{background:var(--paper)}
+.mode-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.mode-card{background:var(--white);border-radius:18px;padding:24px 20px;border:1px solid var(--mist);box-shadow:0 6px 20px rgba(10,42,92,.04);text-align:center}
+.mode-card h3{font-size:1.2rem;color:var(--navy);margin-bottom:4px}
+.mode-card .percent{display:inline-block;font-size:1.55rem;font-weight:800;font-family:var(--head);color:var(--red);margin:8px 0}
+.mode-card p{font-size:.88rem;color:#5A6785;line-height:1.45}
+
+/* Tax Benefits */
+.tax{background:var(--white)}
+.tax-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.tax-card{background:var(--paper);border-radius:18px;padding:28px;border-left:5px solid var(--navy)}
+.tax-card.accent{border-left-color:var(--red)}
+.tax-card h3{font-size:1.3rem;color:var(--navy);margin-bottom:10px}
+.tax-card p{color:#44506B;font-size:.95rem;line-height:1.55}
+.tax-note{margin-top:24px;font-size:.88rem;color:#5A6785;background:var(--paper);padding:14px 18px;border-radius:12px;border:1px dashed var(--mist)}
+
+/* Riders */
+.riders{background:var(--paper)}
+.rider-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.rider-card{background:var(--white);border-radius:18px;padding:22px;box-shadow:0 6px 18px rgba(10,42,92,.04);border:1px solid var(--mist)}
+.rider-card h3{font-size:1.1rem;color:var(--navy);margin-bottom:4px}
+.rider-uin{font-size:.78rem;color:#5A6785;margin-bottom:8px}
+.rider-card p{font-size:.9rem;color:#44506B;line-height:1.5}
+
+/* Bottom CTA Banner */
+.cta-banner{background:var(--navy);color:#fff;padding:68px 0;text-align:center}
+.cta-banner h2{font-size:clamp(1.9rem,3.8vw,2.7rem);color:#fff;margin-bottom:14px}
+.cta-banner p{font-size:1.12rem;color:#D5DEEE;max-width:54ch;margin:0 auto 28px;line-height:1.5}
+.cta-banner .btns{justify-content:center}
+
+/* Footer */
+footer{background:var(--deep);color:#AEBBD3;font-size:.85rem;padding:32px 0}
+footer p+p{margin-top:10px}
+
+/* Mobile Action Bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(7,27,61,.96)}
+.bar .btn{flex:1;justify-content:center;padding:12px}
+.bar .btn.wa{background:#fff;color:var(--navy)}
+
+/* Responsive Media Queries */
+@media(min-width:861px){.bar{display:none}body{padding-bottom:0}}
+@media(max-width:860px){
+  .overview-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  section{padding:54px 0}
+  .plan-hero{padding:42px 0 48px}
+}
+@media(max-width:540px){
+  .steps{grid-template-columns:1fr}
+  .mode-grid{grid-template-columns:1fr 1fr}
+  td.param{width:45%}
+  tbody td, thead th{padding:12px 14px;font-size:.9rem}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<!-- 1. Header -->
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="logo" src="kotak-logo.png" alt="Kotak Life" onload="this.style.display='block'" onerror="this.remove()">
+      <i></i>
+      <span data-field="name">Emerson</span>
+    </a>
+    <nav>
+      <a class="back-link" href="index.html">← Back to Home</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 2. Plan Hero -->
+  <div class="plan-hero">
+    <div class="wrap">
+      <div class="badge-row">
+        <span class="type-badge">Non-Linked &bull; Participating &bull; Savings Plan (Limited Pay)</span>
+        <span class="uin-text">UIN: 107N141V02</span>
+      </div>
+      <h1>Kotak Get Assured Income Now (Kotak GAIN)</h1>
+      <p class="hero-lead">Income that can start as early as Month 1 or Year 1, with life cover up to age 85.</p>
+      
+      <div class="usp-chips">
+        <div class="usp-chip"><span class="dot"></span>Income from Month 1 or Year 1</div>
+        <div class="usp-chip"><span class="dot"></span>Life Cover up to Age 85</div>
+        <div class="usp-chip"><span class="dot"></span>Paid-Up Additions (PUA) Compounding</div>
+        <div class="usp-chip"><span class="dot"></span>Enhanced Benefits for Female Lives</div>
+      </div>
+
+      <div class="btns">
+        <a class="btn red" data-link="wa" data-msg="Hi, I would like to know more about Kotak GAIN (Get Assured Income Now)." href="#">Get Plan Illustration on WhatsApp</a>
+        <a class="btn line" data-link="tel" href="#">Call Advisor</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Overview -->
+  <section class="overview" id="overview">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Plan Overview</h2>
+        <p>A modern participating savings plan crafted for regular income flow and long-term legacy creation.</p>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-text">
+          <p><strong>Kotak Get Assured Income Now (Kotak GAIN)</strong> is an individual, non-linked, participating life insurance savings plan designed for families and professionals seeking continuous liquidity without sacrificing long-term security. Unlike traditional endowment plans that lock your wealth until policy maturity, Kotak GAIN gives you the choice to receive regular income payouts as early as the end of the first policy month or first policy year.</p>
+          <p>The plan offers complete financial adaptability through three distinct plan options: receive early income for immediate recurring cash needs, let your payouts automatically purchase Paid-Up Additions (PUAs) to compound your wealth exponentially, or use Guaranteed Loyalty Additions to offset your future premium payments. Whatever your personal milestone, Kotak GAIN adapts smoothly to your life journey.</p>
+          <p>With convenient limited premium payment terms of 6, 8, 10, or 12 years, you only pay for a chosen short window while your comprehensive life cover safeguards your family up to age 85. In addition, the plan provides specially enhanced benefit structures for female lives, making it a powerful vehicle for women's independent financial planning and multi-generational wealth preservation.</p>
+        </div>
+        <aside class="highlight-panel">
+          <div class="highlight-item">
+            <b>Early Liquidity</b>
+            <span>Option to begin cash payouts from Month 1 or Year 1 to support ongoing living expenses.</span>
+          </div>
+          <div class="highlight-item">
+            <b>Protection to Age 85</b>
+            <span>Long-term life cover keeps your loved ones financially shielded well into your retirement.</span>
+          </div>
+          <div class="highlight-item">
+            <b>Compounding via PUA</b>
+            <span>Reinvest bonuses into paid-up additions for higher maturity yield or emergency encashment.</span>
+          </div>
+          <div class="highlight-item">
+            <b>Women Advantage</b>
+            <span>Preferential benefit rates and boosted payouts tailored for female policyholders.</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Key Benefits -->
+  <section class="benefits" id="benefits">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Key Benefits</h2>
+        <p>Comprehensive protection, guaranteed payouts, and participating bonus participation built into one plan.</p>
+      </div>
+      <div class="benefit-grid">
+        <article class="benefit-card accent">
+          <span class="benefit-tag">Family Protection</span>
+          <h3>Death Benefit</h3>
+          <p>In the unfortunate event of the life insured's demise during the policy term, the nominee receives the highest of: (1) Sum Assured on Death (10x or 11x Annualised Premium based on entry age), (2) Sum Assured on Maturity, or (3) 105% of total premiums paid up to death. Plus, any accrued Paid-Up Additions, Interim Bonus, and Terminal Bonus declared are paid out in full, 100% tax-free under Section 10(10D).</p>
+        </article>
+
+        <article class="benefit-card">
+          <span class="benefit-tag">Long-Term Wealth</span>
+          <h3>Maturity Benefit</h3>
+          <p>Upon surviving the complete policy term, you receive the Sum Assured on Maturity (calculated as Annualised Premium &times; PPT &times; Maturity Booster factor). In addition, you receive any accrued Guaranteed Loyalty Additions (Option C) or accumulated Paid-Up Additions (Option B), along with any declared Terminal Bonus, creating a substantial milestone corpus.</p>
+        </article>
+
+        <article class="benefit-card accent">
+          <span class="benefit-tag">Regular Cash Flow</span>
+          <h3>Survival Benefit (Option A)</h3>
+          <p>Under Option A (Early Income), you enjoy regular income payouts comprising Guaranteed Income plus declared Cash Bonuses. These payouts start as early as the end of the 1st policy month (for monthly payouts) or 1st policy year (for annual payouts), providing predictable liquidity while keeping your full life cover intact.</p>
+        </article>
+
+        <article class="benefit-card">
+          <span class="benefit-tag">Participating Growth</span>
+          <h3>Bonus Structure</h3>
+          <p>As a participating plan, Kotak GAIN allows you to share in the operational profits of Kotak Life's participating fund. Benefits may include regular Cash Bonuses (payable immediately or deferred), Interim Bonuses, and Terminal Bonuses at maturity or death, amplifying your total returns over the policy horizon.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Plan Options -->
+  <section class="options" id="options">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Choose Your Plan Option</h2>
+        <p>Three flexible variants tailored to whether you prefer immediate income, compounding growth, or premium savings.</p>
+      </div>
+      <div class="options-grid">
+        <article class="option-card popular">
+          <span class="option-tag">Most Popular</span>
+          <h3>Option A: Early Income</h3>
+          <p class="subtitle">Immediate Liquidity &amp; Continuous Cash Flow</p>
+          <p class="desc">Ideal for families seeking a dependable second income stream to finance recurring household expenses, child school fees, or lifestyle comforts without waiting years for payouts.</p>
+          <ul>
+            <li>Guaranteed Income + declared Cash Bonus starts as early as Month 1 (monthly mode) or Year 1 (annual mode).</li>
+            <li>Predictable cash flow throughout the term while life cover remains active until age 85.</li>
+            <li>Choice of monthly or annual payout frequencies to match your personal budget cycles.</li>
+            <li>Ideal for salaried professionals, self-employed parents, and early retirees.</li>
+          </ul>
+        </article>
+
+        <article class="option-card">
+          <h3>Option B: Paid-Up Additions</h3>
+          <p class="subtitle">Long-Term Wealth Compounding</p>
+          <p class="desc">Designed for investors who want to maximize capital growth. Instead of withdrawing income, your declared benefits are automatically reinvested to purchase Paid-Up Additions (PUA).</p>
+          <ul>
+            <li>Income benefits automatically buy additional paid-up life cover throughout the policy term.</li>
+            <li>Accrued PUAs compound over time and participate in future bonus declarations.</li>
+            <li>Flexibility to partially encash accrued PUAs for emergencies or receive as a lump sum at maturity or death.</li>
+            <li>Perfect for building a substantial college fund, wedding corpus, or retirement nest egg.</li>
+          </ul>
+        </article>
+
+        <article class="option-card">
+          <h3>Option C: Premium Saver</h3>
+          <p class="subtitle">Smart Savings with Premium Offsets</p>
+          <p class="desc">Crafted to ease your premium commitment in the latter years of the premium paying term, while accumulating a robust milestone corpus for future security.</p>
+          <ul>
+            <li>Earn Guaranteed Loyalty Additions (GLAs) during the premium payment term.</li>
+            <li>GLAs can be utilized to help offset premium payments in latter years, easing financial burden.</li>
+            <li>Attractive Cash Bonuses kick in post-PPT to build long-term wealth for your family.</li>
+            <li>Ideal for individuals aiming to front-load savings and enjoy stress-free later years.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Eligibility & Details -->
+  <section class="eligibility" id="eligibility">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Eligibility &amp; Plan Parameters</h2>
+        <p>Clear, transparent criteria designed to accommodate a wide range of ages and financial goals.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Details &amp; Criteria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="param">Minimum Entry Age</td>
+              <td>90 days (0 years)</td>
+            </tr>
+            <tr>
+              <td class="param">Maximum Entry Age</td>
+              <td>50 to 55 years (varies based on chosen Premium Payment Term)</td>
+            </tr>
+            <tr>
+              <td class="param">Maximum Maturity Age</td>
+              <td>Up to Age 85</td>
+            </tr>
+            <tr>
+              <td class="param">Policy Term (PT)</td>
+              <td>Up to Age 85 or fixed 40 years</td>
+            </tr>
+            <tr>
+              <td class="param">Premium Payment Term (PPT)</td>
+              <td>6, 8, 10, or 12 years (Limited Pay)</td>
+            </tr>
+            <tr>
+              <td class="param">Minimum Sum Assured on Maturity</td>
+              <td>&#8377;4,00,000</td>
+            </tr>
+            <tr>
+              <td class="param">Minimum Annualised Premium</td>
+              <td>&#8377;50,000 p.a. (subject to minimum sum assured)</td>
+            </tr>
+            <tr>
+              <td class="param">Maximum Sum Assured / Premium</td>
+              <td>No limit (subject to underwriting and board-approved financial scrutiny)</td>
+            </tr>
+            <tr>
+              <td class="param">Premium Payment Modes</td>
+              <td>Yearly, Half-yearly, Quarterly, Monthly</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. How It Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>How Kotak GAIN Works</h2>
+        <p>A simple four-step journey from setting up your policy to receiving lifelong payouts.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Choose Your Plan</h3>
+          <p>Select your preferred option (Early Income, Paid-Up Additions, or Premium Saver), policy term up to age 85, and PPT (6, 8, 10, or 12 years) based on your income goals.</p>
+        </li>
+        <li>
+          <h3>Pay Limited Premiums</h3>
+          <p>Pay premiums for your chosen limited term in Yearly, Half-yearly, Quarterly, or Monthly frequency while enjoying Section 80C tax deductions and immediate life cover.</p>
+        </li>
+        <li>
+          <h3>Benefits Grow &amp; Compound</h3>
+          <p>Depending on your option, begin receiving early cash payouts as early as Month 1 / Year 1, or watch your Paid-Up Additions compound with declared participating bonuses.</p>
+        </li>
+        <li>
+          <h3>Receive Payouts &amp; Maturity</h3>
+          <p>Enjoy regular liquidity throughout your golden years, followed by a substantial maturity corpus (Sum Assured on Maturity + additions/bonuses) up to age 85.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 8. Premium Payment Modes -->
+  <section class="modes" id="modes">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Premium Payment Modes</h2>
+        <p>Flexible payment frequencies designed to match your income and cash flow cycle.</p>
+      </div>
+      <div class="mode-grid">
+        <div class="mode-card">
+          <h3>Yearly</h3>
+          <div class="percent">100%</div>
+          <p>Of annual premium. Maximum compounding advantage with no modal frequency loading.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Half-Yearly</h3>
+          <div class="percent">51%</div>
+          <p>Of annual premium. Convenient semi-annual schedule aligned with mid-year financial reviews.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Quarterly</h3>
+          <div class="percent">26%</div>
+          <p>Of annual premium. Balanced quarterly budgeting for business owners and consultants.</p>
+        </div>
+        <div class="mode-card">
+          <h3>Monthly</h3>
+          <div class="percent">8.8%</div>
+          <p>Of annual premium (via ECS / NACH). Effortless monthly discipline akin to a systematic savings plan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Tax Benefits -->
+  <section class="tax" id="tax">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Tax Benefits</h2>
+        <p>Save tax while building security and growing wealth under prevailing Indian tax laws.</p>
+      </div>
+      <div class="tax-grid">
+        <article class="tax-card accent">
+          <h3>Section 80C Deduction</h3>
+          <p>Premiums paid towards Kotak GAIN are eligible for tax deductions of up to &#8377;1,50,000 per financial year under Section 80C of the Income Tax Act, 1961 (for individuals opting for the Old Tax Regime). This reduces your taxable income every year you pay premiums.</p>
+        </article>
+
+        <article class="tax-card">
+          <h3>Section 10(10D) Exemption</h3>
+          <p>Maturity and survival proceeds received under the plan are completely exempt from income tax under Section 10(10D), subject to the aggregate annual premium limit of &#8377;5,00,000 across non-ULIP policies issued on or after 1st April 2023. In the event of death, all claim payouts to the nominee are 100% tax-free without any cap.</p>
+        </article>
+      </div>
+      <div class="tax-note">
+        <strong>Please note:</strong> Tax benefits are subject to prevailing provisions of the Income Tax Act, 1961 and amendments from time to time. Please consult your chartered accountant or tax advisor for advice tailored to your personal tax bracket.
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Optional Riders -->
+  <section class="riders" id="riders">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Optional Riders for Enhanced Protection</h2>
+        <p>Strengthen your policy with optional riders to guard against unforeseen critical illness, disability, and accidents.</p>
+      </div>
+      <div class="rider-grid">
+        <article class="rider-card">
+          <h3>Kotak Term Benefit Rider</h3>
+          <div class="rider-uin">UIN: 107B003V03</div>
+          <p>Provides additional pure term life insurance cover over and above the base death benefit in the unfortunate event of the insured's demise.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Accidental Death Benefit Rider</h3>
+          <div class="rider-uin">UIN: 107B001V03</div>
+          <p>Pays an extra lump sum benefit to the family if death occurs as a result of an accident, providing vital financial stability.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Permanent Disability Benefit Rider</h3>
+          <div class="rider-uin">UIN: 107B002V03</div>
+          <p>Delivers a lump sum payout if the insured suffers permanent total disability resulting from an accidental injury.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Life Guardian Benefit Rider</h3>
+          <div class="rider-uin">UIN: 107B012V02</div>
+          <p>Waives all future remaining premiums in case of the untimely demise of the policyholder/parent, ensuring all policy benefits continue uninterrupted.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Accidental Disability Guardian Benefit Rider</h3>
+          <div class="rider-uin">UIN: 107B011V02</div>
+          <p>Waives all future premiums if the policyholder suffers total permanent disability due to an accident, keeping your family's savings plan fully funded.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Critical Illness Plus Benefit Rider</h3>
+          <div class="rider-uin">UIN: 107B020V01</div>
+          <p>Provides an immediate lump sum cash benefit upon diagnosis of any of the covered critical illnesses, helping meet treatment costs without dipping into savings.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Bottom CTA Banner -->
+  <section class="cta-banner">
+    <div class="wrap">
+      <h2>Want to know if Kotak GAIN fits your goals?</h2>
+      <p>Connect directly for a personalized benefit illustration tailored to your age, premium budget, and income timeline. No obligation, free consultation.</p>
+      <div class="btns">
+        <a class="btn red" data-link="wa" data-msg="Hi, I would like to know more about Kotak GAIN (Get Assured Income Now)." href="#">Discuss on WhatsApp</a>
+        <a class="btn line" data-link="tel" href="#">Call Advisor</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 12. Footer -->
+<footer>
+  <div class="wrap">
+    <p><span data-field="name">Your Name</span>, <span data-field="insurer">Kotak Life</span> insurance advisor. IRDAI licence no. <span data-field="licence">XXXXXXXX</span>.</p>
+    <p>Insurance is the subject matter of solicitation. This is a personal advisor website and not the official website of Kotak Mahindra. Product details are indicative; please read the sales brochure and policy documents carefully before concluding a sale.</p>
+  </div>
+</footer>
+
+<!-- 13. Mobile Action Bar -->
+<div class="bar">
+  <a class="btn red" data-link="tel" href="#">Call</a>
+  <a class="btn wa" data-link="wa" data-msg="Hi, I would like to know more about Kotak GAIN (Get Assured Income Now)." href="#">WhatsApp</a>
+</div>
+
+<!-- 14. CONFIG block -->
+<script>
+var CONFIG = {
+  name: "Emerson",
+  insurer: "Kotak Life",
+  phone: "919444510089",
+  phoneShow: "+91 94445 10089",
+  email: "emerson.bagavathsingh@gmail.com",
+  city: "Chennai",
+  licence: "60350380",
+  years: "2+",
+  clients: "100+",
+  waMessage: "Hi, I would like to review my insurance cover."
+};
+
+document.querySelectorAll("[data-field]").forEach(function(el){
+  var v = CONFIG[el.dataset.field];
+  if (v) el.textContent = v;
+});
+document.querySelectorAll("[data-link]").forEach(function(el){
+  var t = el.dataset.link;
+  if (t === "tel") el.href = "tel:+" + CONFIG.phone;
+  if (t === "mail") el.href = "mailto:" + CONFIG.email;
+  if (t === "wa") { el.href = "https://wa.me/" + CONFIG.phone + "?text=" + encodeURIComponent(el.dataset.msg || CONFIG.waMessage); el.target = "_blank"; el.rel = "noopener"; }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kotak Assured Savings Plan | 100% Guaranteed Returns Life Insurance</title>
+<meta name="description" content="Kotak Assured Savings Plan (UIN: 107N081V09) — Non-linked, non-participating guaranteed endowment life insurance. 100% guaranteed maturity with no market or bonus risk.">
+<link rel="icon" type="image/png" href="kotak-logo.png">
+<link rel="apple-touch-icon" href="kotak-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A2A5C; --deep:#071B3D; --red:#E4002B; --paper:#F5F7FB; --ink:#14213D; --mist:#DCE4F0; --white:#fff;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;padding-bottom:76px}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--head);line-height:1.15;letter-spacing:-.02em}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* Header */
+header{background:var(--deep);color:var(--white);position:sticky;top:0;z-index:30;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:var(--head);font-weight:700;font-size:1.05rem;text-decoration:none;display:flex;align-items:center}
+.logo{display:none;height:34px;width:auto;background:#fff;border-radius:6px;padding:4px 9px;margin-right:12px}
+.brand i{display:inline-block;width:10px;height:10px;background:var(--red);border-radius:50%;margin-right:9px}
+nav{display:flex;align-items:center;gap:20px;font-size:.95rem}
+nav a{text-decoration:none;opacity:.85;color:var(--white);transition:opacity .15s}
+nav a:hover{opacity:1;text-decoration:underline}
+nav a.back-link{opacity:1;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);padding:7px 16px;border-radius:999px;font-weight:600;font-size:.9rem}
+nav a.back-link:hover{background:rgba(255,255,255,.22);text-decoration:none}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;border:2px solid transparent;transition:transform .15s, background-color .15s}
+.btn:active{transform:scale(.97)}
+.btn.red{background:var(--red);color:#fff}
+.btn.red:hover{background:#c40025}
+.btn.line{border-color:#fff;color:#fff}
+.btn.line:hover{background:#fff;color:var(--navy)}
+.btn.navy{background:var(--navy);color:#fff}
+.btn.navy:hover{background:var(--deep)}
+.btn.outline-navy{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn.outline-navy:hover{background:var(--navy);color:#fff}
+
+/* Plan Hero */
+.hero-plan{background:var(--navy);color:var(--white);padding:52px 0 60px}
+.hero-plan .badge-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:16px}
+.badge{display:inline-block;padding:5px 13px;border-radius:999px;font-size:.82rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase}
+.badge.gold{background:#FFD700;color:#071B3D}
+.badge.translucent{background:rgba(255,255,255,.14);color:#fff}
+.uin-text{font-size:.85rem;color:#BFCBE2}
+.hero-plan h1{font-size:clamp(2.3rem,4.6vw,3.6rem);font-weight:800;color:#fff;max-width:18ch;margin-bottom:14px}
+.hero-plan p.lead{font-size:1.25rem;line-height:1.45;color:#DCE4F0;max-width:44ch;font-weight:500;margin-bottom:28px}
+.hero-plan .btns{display:flex;flex-wrap:wrap;gap:14px}
+
+.hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:42px;padding-top:28px;border-top:1px solid rgba(255,255,255,.15)}
+.stat-pill{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 18px}
+.stat-pill b{display:block;font-family:var(--head);font-size:1.4rem;color:#fff;line-height:1.15}
+.stat-pill span{font-size:.85rem;color:#BFCBE2}
+
+/* Sections Common */
+section{padding:68px 0}
+.sec-head{max-width:64ch;margin-bottom:34px}
+.sec-head.centered{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head .kicker{display:inline-block;font-size:.84rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--red);margin-bottom:8px}
+.sec-head h2{font-size:clamp(1.85rem,3.4vw,2.5rem);color:var(--navy)}
+.sec-head p{margin-top:10px;color:#44506B;font-size:1.02rem}
+
+/* Overview */
+.overview{background:var(--white)}
+.overview-content{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:start}
+.overview-text p+p{margin-top:16px}
+.overview-text p{color:#2B3954;font-size:1.05rem;line-height:1.68}
+.usp-card{background:var(--paper);border-radius:18px;padding:26px;border-left:5px solid var(--red);box-shadow:0 8px 24px rgba(10,42,92,.05)}
+.usp-card h3{font-size:1.25rem;color:var(--navy);margin-bottom:14px}
+.usp-list{list-style:none;display:grid;gap:12px}
+.usp-list li{display:flex;gap:10px;font-size:.94rem;color:#33425E}
+.usp-list li span.dot{color:var(--red);font-weight:bold;font-size:1.1rem;line-height:1.2}
+
+/* Key Benefits */
+.benefits-sec{background:var(--paper)}
+.benefit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.benefit-card{background:var(--white);border-radius:18px;padding:28px;box-shadow:0 8px 24px rgba(10,42,92,.06);border-top:6px solid var(--navy);display:flex;flex-direction:column;transition:transform .2s}
+.benefit-card:hover{transform:translateY(-3px)}
+.benefit-card.accent{border-top-color:var(--red)}
+.benefit-card .icon-label{display:inline-block;font-size:.78rem;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.benefit-card h3{font-size:1.35rem;color:var(--navy);margin-bottom:12px}
+.benefit-card p{color:#44506B;font-size:.96rem;line-height:1.55}
+.benefit-card .sub-list{margin-top:14px;padding-top:12px;border-top:1px solid var(--mist);display:grid;gap:6px;font-size:.88rem;color:#14213D}
+.benefit-card .sub-list div{display:flex;justify-content:space-between}
+.benefit-card .sub-list b{color:var(--navy)}
+
+/* Maturity Formula Box */
+.formula-banner{background:linear-gradient(135deg,#071B3D 0%,#0A2A5C 100%);color:#fff;border-radius:18px;padding:34px 30px;margin-top:38px;box-shadow:0 12px 32px rgba(10,42,92,.18)}
+.formula-banner .kicker{color:#FFD700;font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.formula-banner h3{color:#fff;font-size:1.5rem;margin:6px 0 16px}
+.formula-visual{display:flex;flex-wrap:wrap;align-items:center;gap:12px;background:rgba(255,255,255,.07);padding:18px 20px;border-radius:14px;border:1px solid rgba(255,255,255,.15);margin-bottom:18px}
+.formula-chip{background:var(--navy);border:1px solid rgba(255,255,255,.25);padding:10px 16px;border-radius:10px;text-align:center}
+.formula-chip b{display:block;font-family:var(--head);font-size:1.05rem;color:#fff}
+.formula-chip span{display:block;font-size:.75rem;color:#BFCBE2}
+.formula-op{font-family:var(--head);font-size:1.6rem;font-weight:800;color:var(--red);line-height:1}
+.formula-op.equals{color:#fff}
+.formula-chip.result{background:var(--red);border-color:var(--red)}
+.formula-chip.result b{color:#fff;font-size:1.15rem}
+.formula-chip.result span{color:rgba(255,255,255,.9)}
+.formula-banner p.formula-note{font-size:.9rem;color:#D5DEEE;margin:0}
+
+/* Plan Options */
+.options-sec{background:var(--white)}
+.options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.option-card{background:var(--paper);border-radius:18px;padding:26px;border:1px solid var(--mist);box-shadow:0 6px 20px rgba(10,42,92,.04);display:flex;flex-direction:column;position:relative}
+.option-card.popular{background:#fff;border:2px solid var(--navy);box-shadow:0 10px 30px rgba(10,42,92,.12)}
+.option-card.popular::before{content:"MAX GYA RATE";position:absolute;top:-12px;right:20px;background:var(--red);color:#fff;font-size:.72rem;font-weight:800;padding:4px 12px;border-radius:999px;letter-spacing:.04em}
+.option-tag{font-size:.82rem;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+.option-card h3{font-size:1.5rem;color:var(--navy);margin-bottom:4px}
+.option-desc{font-size:.9rem;color:#5A6785;margin-bottom:14px}
+.gya-badge{background:var(--white);padding:10px 14px;border-radius:10px;border-left:4px solid var(--navy);font-weight:600;color:var(--navy);font-size:.92rem;margin-bottom:16px}
+.option-card.popular .gya-badge{background:var(--paper);border-left-color:var(--red)}
+.gya-badge b{color:var(--red);font-size:1.15rem}
+.option-card ul{list-style:none;display:grid;gap:9px;font-size:.92rem;color:#33425E;margin-bottom:20px;flex-grow:1}
+.option-card ul li{position:relative;padding-left:20px}
+.option-card ul li::before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:bold}
+.option-card .best-for{font-size:.84rem;color:#5A6785;border-top:1px solid var(--mist);padding-top:12px}
+.option-card .best-for strong{color:var(--navy)}
+
+/* Eligibility Table */
+.eligibility-sec{background:var(--paper)}
+.table-box{overflow-x:auto;background:var(--white);border-radius:18px;border:1px solid var(--mist);box-shadow:0 6px 20px rgba(10,42,92,.04)}
+table{width:100%;border-collapse:collapse;text-align:left;font-size:.96rem}
+th,td{padding:16px 22px;border-bottom:1px solid var(--mist);vertical-align:middle}
+th{background:var(--navy);color:#fff;font-family:var(--head);font-weight:600;font-size:1rem;letter-spacing:.01em}
+tbody tr:nth-child(even){background:var(--paper)}
+tbody tr:nth-child(odd){background:var(--white)}
+tbody tr:last-child td{border-bottom:none}
+td:first-child{font-weight:600;color:var(--navy);width:34%}
+td:last-child{color:#2B3954}
+.table-note{margin-top:14px;font-size:.88rem;color:#5A6785}
+
+/* How It Works */
+.how-sec{background:var(--white)}
+.steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.step-item{counter-increment:s;background:var(--paper);border-radius:18px;padding:26px 22px;border-top:4px solid var(--navy);box-shadow:0 6px 18px rgba(10,42,92,.04);display:flex;flex-direction:column}
+.step-item::before{content:"0" counter(s);display:block;font-family:var(--head);font-weight:800;font-size:1.8rem;color:var(--red);margin-bottom:6px}
+.step-item h3{font-size:1.2rem;color:var(--navy);margin-bottom:8px}
+.step-item p{font-size:.92rem;color:#44506B;line-height:1.55}
+
+/* Payment Modes */
+.modes-sec{background:var(--paper)}
+.modes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.mode-card{background:var(--white);border-radius:18px;padding:24px;border:1px solid var(--mist);box-shadow:0 6px 18px rgba(10,42,92,.04);text-align:center}
+.mode-card .frequency{font-family:var(--head);font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+.mode-card .modal-load{display:inline-block;background:var(--paper);color:var(--red);font-weight:700;font-size:.86rem;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.mode-card p{font-size:.9rem;color:#5A6785;line-height:1.5}
+
+/* Tax Benefits */
+.tax-sec{background:var(--white)}
+.tax-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.tax-card{background:var(--paper);border-radius:18px;padding:30px;border-left:5px solid var(--navy);box-shadow:0 6px 20px rgba(10,42,92,.04)}
+.tax-card.accent{border-left-color:var(--red)}
+.tax-card .tag{display:inline-block;font-size:.8rem;font-weight:700;color:var(--navy);background:var(--mist);padding:4px 10px;border-radius:6px;margin-bottom:10px}
+.tax-card.accent .tag{color:var(--red);background:#FFE5E9}
+.tax-card h3{font-size:1.4rem;color:var(--navy);margin-bottom:12px}
+.tax-card p{color:#33425E;font-size:.96rem;line-height:1.6}
+.tax-card ul{margin:14px 0 0 18px;display:grid;gap:8px;font-size:.93rem;color:#44506B}
+.tax-disclaimer{margin-top:22px;padding:14px 18px;background:var(--paper);border-radius:12px;font-size:.85rem;color:#5A6785}
+
+/* Optional Riders */
+.riders-sec{background:var(--paper)}
+.riders-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:22px}
+.rider-card{background:var(--white);border-radius:18px;padding:24px;border:1px solid var(--mist);box-shadow:0 6px 18px rgba(10,42,92,.04);display:flex;flex-direction:column}
+.rider-card h3{font-size:1.18rem;color:var(--navy);margin-bottom:6px}
+.rider-uin{font-size:.78rem;color:#5A6785;margin-bottom:12px}
+.rider-card p{font-size:.92rem;color:#44506B;line-height:1.55}
+
+/* Bottom CTA Banner */
+.bottom-cta-sec{padding:60px 0 72px;background:var(--paper)}
+.cta-banner{background:var(--navy);color:#fff;border-radius:18px;padding:52px 34px;text-align:center;box-shadow:0 16px 40px rgba(10,42,92,.25)}
+.cta-banner h2{font-size:clamp(1.9rem,3.6vw,2.7rem);color:#fff;margin-bottom:12px}
+.cta-banner p{font-size:1.15rem;color:#D5DEEE;max-width:54ch;margin:0 auto 28px;line-height:1.5}
+.cta-banner .btns{justify-content:center;display:flex;flex-wrap:wrap;gap:14px}
+.advisor-badge{margin-top:26px;display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);padding:8px 18px;border-radius:999px;font-size:.88rem;color:#D5DEEE}
+.advisor-badge b{color:#fff}
+
+/* Footer */
+footer{background:var(--deep);color:#AEBBD3;font-size:.85rem;padding:34px 0}
+footer p+p{margin-top:10px}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+/* Mobile Action Bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(7,27,61,.96);box-shadow:0 -4px 16px rgba(0,0,0,.25)}
+.bar .btn{flex:1;justify-content:center;padding:12px}
+.bar .btn.wa{background:#fff;color:var(--navy)}
+
+/* Responsive */
+@media(min-width:861px){.bar{display:none}body{padding-bottom:0}}
+@media(max-width:860px){
+  nav{display:none}
+  .overview-content{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .tax-grid{grid-template-columns:1fr}
+  section{padding:52px 0}
+  .hero-plan{padding:42px 0 50px}
+  .formula-visual{flex-direction:column;align-items:stretch}
+  .formula-chip{text-align:left}
+  .formula-op{text-align:center}
+}
+@media(max-width:520px){
+  .steps{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .hero-plan .btns{flex-direction:column}
+  .hero-plan .btn{width:100%;justify-content:center}
+  .cta-banner{padding:38px 20px}
+  .cta-banner .btns{flex-direction:column}
+  .cta-banner .btn{width:100%;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<!-- 1. Header -->
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="logo" src="kotak-logo.png" alt="Kotak Life" onload="this.style.display='block'" onerror="this.remove()">
+      <i></i><span data-field="name">Emerson</span>
+    </a>
+    <nav>
+      <a class="back-link" href="index.html">← Back to Home</a>
+      <a href="#overview">Overview</a>
+      <a href="#benefits">Key Benefits</a>
+      <a href="#options">Options</a>
+      <a href="#eligibility">Eligibility</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#tax-benefits">Tax Benefits</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 2. Plan Hero -->
+  <section class="hero-plan">
+    <div class="wrap">
+      <div class="badge-row">
+        <span class="badge gold">100% Guaranteed Payout</span>
+        <span class="badge translucent">Non-Linked · Non-Participating Savings</span>
+        <span class="uin-text">UIN: 107N081V09</span>
+      </div>
+      <h1>Kotak Assured Savings Plan</h1>
+      <p class="lead">Know your maturity amount upfront. 100% guaranteed returns with no market or bonus uncertainty.</p>
+      <div class="btns">
+        <a class="btn red" data-link="wa" href="#" data-msg="Hi, I would like to know more about Kotak Assured Savings Plan.">WhatsApp Me About This Plan</a>
+        <a class="btn line" data-link="tel" href="#">Call Advisor</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <b>Up to 10%</b>
+          <span>Guaranteed Yearly Additions</span>
+        </div>
+        <div class="stat-pill">
+          <b>5, 6, 7 or 10 Yrs</b>
+          <span>Short Premium Payment Terms</span>
+        </div>
+        <div class="stat-pill">
+          <b>Zero Market Risk</b>
+          <span>Fixed maturity amount defined on Day 1</span>
+        </div>
+        <div class="stat-pill">
+          <b>Sec 80C & 10(10D)</b>
+          <span>Tax advantages on premium and maturity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Overview -->
+  <section id="overview" class="overview">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Plan Summary</span>
+        <h2>Guaranteed wealth creation for conservative milestones</h2>
+        <p>A dependable life insurance savings plan designed for people who want absolute certainty and zero surprises.</p>
+      </div>
+      <div class="overview-content">
+        <div class="overview-text">
+          <p>Unlike market-linked ULIPs or participating endowment plans whose future maturity value fluctuates with stock indices or annual company-declared bonuses, <strong>Kotak Assured Savings Plan</strong> delivers complete financial predictability. It is an individual, non-linked, non-participating life insurance savings plan where every rupee of your maturity benefit is calculated and locked in on the very day your policy commences.</p>
+          <p>Under this plan, you commit to paying premiums for a comfortable, limited term of 5, 6, 7, or 10 years, while your life cover and money continue working over a policy horizon of 10 to 20 years. Throughout your premium payment term, the policy credits <strong>Guaranteed Yearly Additions (GYA)</strong> at rates climbing as high as 10% of cumulative annualized premiums paid. At the end of the term, a lump sum <strong>Guaranteed Loyalty Addition (GLA)</strong> is paid in addition to your Basic Sum Assured.</p>
+          <p>Whether you are earmarking an untouchable higher-education fund for your child, preparing a wedding reserve, planning a debt payoff, or creating a risk-free safe bucket for retirement, Kotak Assured Savings Plan removes all guesswork. If life takes an unfortunate turn, your family is shielded by a comprehensive life cover that guarantees their financial stability.</p>
+        </div>
+        <aside class="usp-card">
+          <h3>Why Choose This Plan?</h3>
+          <ul class="usp-list">
+            <li><span class="dot">✓</span><div><strong>Zero market or bonus uncertainty:</strong> Your guaranteed maturity sum is stated upfront in the policy schedule.</div></li>
+            <li><span class="dot">✓</span><div><strong>Stepped GYA up to 10%:</strong> High annual accruals that grow proportionally with your cumulative premiums.</div></li>
+            <li><span class="dot">✓</span><div><strong>Short premium commitment:</strong> Complete your payment in as little as 5 years for a 10 or 15-year milestone.</div></li>
+            <li><span class="dot">✓</span><div><strong>High sum assured rebates:</strong> Larger premium slabs receive higher Basic Sum Assured per rupee invested.</div></li>
+            <li><span class="dot">✓</span><div><strong>Capital preservation:</strong> Pure endowment structure prevents premature depletion of your corpus.</div></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Key Benefits -->
+  <section id="benefits" class="benefits-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Core Value</span>
+        <h2>Key Benefits Built Into Your Plan</h2>
+        <p>Every rupee of benefit under this policy is backed by contractual guarantees and life protection.</p>
+      </div>
+      <div class="benefit-grid">
+        <article class="benefit-card accent">
+          <span class="icon-label">Maturity Payout</span>
+          <h3>Guaranteed Maturity Benefit</h3>
+          <p>On surviving until the end of the policy term with all due premiums paid, you receive the full Guaranteed Maturity Benefit. It is completely immune to market volatility and economic downturns.</p>
+          <div class="sub-list">
+            <div><span>Basic Sum Assured:</span> <b>100% Guaranteed</b></div>
+            <div><span>Accrued GYA:</span> <b>Cumulative Accruals</b></div>
+            <div><span>Loyalty Addition (GLA):</span> <b>Lump Sum Bonus</b></div>
+          </div>
+        </article>
+
+        <article class="benefit-card">
+          <span class="icon-label">Annual Wealth Boost</span>
+          <h3>Guaranteed Yearly Additions (GYA)</h3>
+          <p>Every year throughout your premium payment term (PPT), a fixed percentage is calculated on cumulative annualized premiums paid and credited to your policy account.</p>
+          <div class="sub-list">
+            <div><span>5-Pay Option:</span> <b>7% p.a. of cumulative premiums</b></div>
+            <div><span>6-Pay Option:</span> <b>8% p.a. of cumulative premiums</b></div>
+            <div><span>7-Pay Option:</span> <b>9% p.a. of cumulative premiums</b></div>
+            <div><span>10-Pay Option:</span> <b>10% p.a. of cumulative premiums</b></div>
+          </div>
+        </article>
+
+        <article class="benefit-card">
+          <span class="icon-label">Tenure Reward</span>
+          <h3>Guaranteed Loyalty Addition (GLA)</h3>
+          <p>A guaranteed bonus credited at maturity to reward you for staying invested for the full tenure. It adds a meaningful lump sum boost directly to your final payout.</p>
+          <div class="sub-list">
+            <div><span>Payout Timing:</span> <b>At Policy Maturity</b></div>
+            <div><span>Nature:</span> <b>Contractually Guaranteed</b></div>
+            <div><span>Impact:</span> <b>Amplifies total net maturity yield</b></div>
+          </div>
+        </article>
+
+        <article class="benefit-card">
+          <span class="icon-label">Family Shield</span>
+          <h3>Comprehensive Death Benefit</h3>
+          <p>In the unfortunate event of the life insured's demise during the policy term, the nominee receives full financial protection to ensure the family's dreams remain funded.</p>
+          <div class="sub-list">
+            <div><span>Primary Formula:</span> <b>Basic Death Benefit + Accrued GYA</b></div>
+            <div><span>Minimum Guarantee:</span> <b>At least 105% of all premiums paid</b></div>
+            <div><span>Tax Status:</span> <b>100% Tax-Free under Sec 10(10D)</b></div>
+          </div>
+        </article>
+
+        <article class="benefit-card">
+          <span class="icon-label">Discipline by Design</span>
+          <h3>Pure Endowment Structure</h3>
+          <p>Kotak Assured Savings Plan has no interim survival drainage during the term. By keeping the full corpus compounding safely until maturity, you avoid impulsive withdrawals.</p>
+          <div class="sub-list">
+            <div><span>Survival Benefits during term:</span> <b>Nil (Undisturbed growth)</b></div>
+            <div><span>Ideal For:</span> <b>Strict goal-based saving milestones</b></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Maturity Formula Visual Callout -->
+      <div class="formula-banner">
+        <span class="kicker">How Your Payout Is Calculated</span>
+        <h3>Contractual Maturity Formula</h3>
+        <div class="formula-visual">
+          <div class="formula-chip">
+            <b>Basic Sum Assured (BSA)</b>
+            <span>Guaranteed base amount based on age & premium</span>
+          </div>
+          <div class="formula-op">+</div>
+          <div class="formula-chip">
+            <b>Accrued GYA</b>
+            <span>7% to 10% on cumulative premiums during PPT</span>
+          </div>
+          <div class="formula-op">+</div>
+          <div class="formula-chip">
+            <b>Guaranteed Loyalty Addition</b>
+            <span>Lump sum tenure completion bonus</span>
+          </div>
+          <div class="formula-op equals">=</div>
+          <div class="formula-chip result">
+            <b>100% Guaranteed Maturity Benefit</b>
+            <span>Zero bonus risk · Zero market exposure</span>
+          </div>
+        </div>
+        <p class="formula-note">All three components are legally guaranteed under the terms of the policy contract, provided all due premiums have been paid in full.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Plan Options -->
+  <section id="options" class="options-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Customizable Terms</span>
+        <h2>Four Tailored Premium Payment Options</h2>
+        <p>Choose the duration of your premium commitment and match your policy term to your family's future goal.</p>
+      </div>
+      <div class="options-grid">
+        <article class="option-card">
+          <span class="option-tag">Option 1</span>
+          <h3>5-Pay</h3>
+          <p class="option-desc">Fast-track savings with a short 5-year premium commitment.</p>
+          <div class="gya-badge">GYA Rate: <b>7% p.a.</b> of cumulative premiums</div>
+          <ul>
+            <li><strong>Premium Term:</strong> 5 Years</li>
+            <li><strong>Policy Term:</strong> 10 or 15 Years</li>
+            <li>Immediate financial discipline</li>
+            <li>Life cover active through entire term</li>
+          </ul>
+          <p class="best-for"><strong>Best for:</strong> Short-term savings sprints like secondary schooling fees or planned capital purchases in 10-15 years.</p>
+        </article>
+
+        <article class="option-card">
+          <span class="option-tag">Option 2</span>
+          <h3>6-Pay</h3>
+          <p class="option-desc">A comfortable intermediate option balancing annual budget and growth.</p>
+          <div class="gya-badge">GYA Rate: <b>8% p.a.</b> of cumulative premiums</div>
+          <ul>
+            <li><strong>Premium Term:</strong> 6 Years</li>
+            <li><strong>Policy Term:</strong> 12 or 18 Years</li>
+            <li>Higher GYA percentage</li>
+            <li>Longer compounding window</li>
+          </ul>
+          <p class="best-for"><strong>Best for:</strong> Families aligning payouts with graduation or early teenage milestones in 12 to 18 years.</p>
+        </article>
+
+        <article class="option-card">
+          <span class="option-tag">Option 3</span>
+          <h3>7-Pay</h3>
+          <p class="option-desc">Stepped savings offering high accumulation and solid protection.</p>
+          <div class="gya-badge">GYA Rate: <b>9% p.a.</b> of cumulative premiums</div>
+          <ul>
+            <li><strong>Premium Term:</strong> 7 Years</li>
+            <li><strong>Policy Term:</strong> 14 or 20 Years</li>
+            <li>Steeper 9% yearly additions</li>
+            <li>Extended 20-year security</li>
+          </ul>
+          <p class="best-for"><strong>Best for:</strong> Parents saving for child's university education or foreign postgraduate studies.</p>
+        </article>
+
+        <article class="option-card popular">
+          <span class="option-tag">Option 4</span>
+          <h3>10-Pay</h3>
+          <p class="option-desc">Maximize your wealth with the highest guaranteed yearly addition rate.</p>
+          <div class="gya-badge">GYA Rate: <b>10% p.a.</b> of cumulative premiums</div>
+          <ul>
+            <li><strong>Premium Term:</strong> 10 Years</li>
+            <li><strong>Policy Term:</strong> 15 or 20 Years</li>
+            <li>Maximum 10% annual GYA accrual</li>
+            <li>Substantial guaranteed maturity corpus</li>
+          </ul>
+          <p class="best-for"><strong>Best for:</strong> Long-term wealth creation, child's marriage fund, or a zero-risk retirement nest egg.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Eligibility & Details -->
+  <section id="eligibility" class="eligibility-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">At A Glance</span>
+        <h2>Eligibility & Plan Parameters</h2>
+        <p>Review the minimum and maximum boundaries before structuring your Kotak Assured Savings Plan.</p>
+      </div>
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Parameter</th>
+              <th scope="col">Details & Criteria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Min Entry Age</td>
+              <td>3 years (Age last birthday)</td>
+            </tr>
+            <tr>
+              <td>Max Entry Age</td>
+              <td>60 years (Age last birthday)</td>
+            </tr>
+            <tr>
+              <td>Min Maturity Age</td>
+              <td>18 years (Age last birthday)</td>
+            </tr>
+            <tr>
+              <td>Max Maturity Age</td>
+              <td>75 years (Age last birthday)</td>
+            </tr>
+            <tr>
+              <td>Policy Term (PT)</td>
+              <td>10, 12, 14, 15, 18, or 20 years (selected based on PPT option)</td>
+            </tr>
+            <tr>
+              <td>Premium Payment Term (PPT)</td>
+              <td>5, 6, 7, or 10 years</td>
+            </tr>
+            <tr>
+              <td>Min Annualised Premium</td>
+              <td>₹20,000 per annum (exclusive of applicable goods & services tax)</td>
+            </tr>
+            <tr>
+              <td>Min Sum Assured</td>
+              <td>~₹2,00,000 to ₹2,50,000 (varies based on entry age, gender, PPT, and premium slab)</td>
+            </tr>
+            <tr>
+              <td>Max Sum Assured / Premium</td>
+              <td>No upper limit (subject to Kotak Life's Board-approved Underwriting Policy)</td>
+            </tr>
+            <tr>
+              <td>Premium Modes</td>
+              <td>Yearly, Half-Yearly, Quarterly, and Monthly</td>
+            </tr>
+            <tr>
+              <td>Maturity Benefit</td>
+              <td>Basic Sum Assured + Accrued GYA + Guaranteed Loyalty Addition (GLA)</td>
+            </tr>
+            <tr>
+              <td>Death Benefit</td>
+              <td>Highest of: (1) Basic Death Benefit + Accrued GYA, or (2) 105% of total premiums paid</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">* Note: For minor lives (entry age under 18), the risk commences immediately upon policy issuance. The policy vests in the life insured automatically upon attaining age 18.</p>
+    </div>
+  </section>
+
+  <!-- 7. How It Works -->
+  <section id="how-it-works" class="how-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Step-By-Step Journey</span>
+        <h2>How Kotak Assured Savings Plan Works</h2>
+        <p>A simple, disciplined journey from your first payment to guaranteed maturity payout.</p>
+      </div>
+      <ol class="steps">
+        <li class="step-item">
+          <h3>Choose Your Plan</h3>
+          <p>Decide how much you want to invest each year, pick a convenient premium payment term (5, 6, 7, or 10 years), and select a matching policy tenure (10 to 20 years) for your goal.</p>
+        </li>
+        <li class="step-item">
+          <h3>Pay Premiums & Stay Covered</h3>
+          <p>Pay your chosen premium in yearly, half-yearly, quarterly, or monthly installments. Your comprehensive life insurance cover is active from day one, safeguarding your loved ones.</p>
+        </li>
+        <li class="step-item">
+          <h3>Accumulate Guaranteed Additions</h3>
+          <p>Every year during your premium paying years, Guaranteed Yearly Additions (GYA) accrue between 7% and 10% on cumulative premiums paid. Zero market risk, zero volatility.</p>
+        </li>
+        <li class="step-item">
+          <h3>Receive 100% Guaranteed Payout</h3>
+          <p>At maturity, collect your full maturity benefit: Basic Sum Assured + all accrued GYA + Guaranteed Loyalty Addition in a single lump sum, tax-free under prevailing laws.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 8. Premium Payment Modes -->
+  <section id="payment-modes" class="modes-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Payment Flexibility</span>
+        <h2>Premium Payment Modes</h2>
+        <p>Select the payment frequency that fits your cash flow and financial routine.</p>
+      </div>
+      <div class="modes-grid">
+        <div class="mode-card">
+          <div class="frequency">Yearly</div>
+          <span class="modal-load">Standard Base Rate (100%)</span>
+          <p>Pay once a year with zero modal loading. Highly recommended for annual bonus or dividend earners.</p>
+        </div>
+        <div class="mode-card">
+          <div class="frequency">Half-Yearly</div>
+          <span class="modal-load">51% of Annual Premium</span>
+          <p>Split your annual contribution into two convenient half-yearly payments 6 months apart.</p>
+        </div>
+        <div class="mode-card">
+          <div class="frequency">Quarterly</div>
+          <span class="modal-load">26% of Annual Premium</span>
+          <p>Spread your savings evenly across each financial quarter for smooth budget management.</p>
+        </div>
+        <div class="mode-card">
+          <div class="frequency">Monthly</div>
+          <span class="modal-load">8.8% of Annual Premium</span>
+          <p>Automate monthly contributions via NACH / auto-debit, ideal for salaried professionals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Tax Benefits -->
+  <section id="tax-benefits" class="tax-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Government Incentives</span>
+        <h2>Tax Benefits on Kotak Assured Savings Plan</h2>
+        <p>Enhance your effective returns with tax savings at both the investment and maturity stages.</p>
+      </div>
+      <div class="tax-grid">
+        <article class="tax-card">
+          <span class="tag">Section 80C</span>
+          <h3>Deduction on Premiums Paid</h3>
+          <p>The premiums you pay towards Kotak Assured Savings Plan are eligible for tax deduction under Section 80C of the Income Tax Act, 1961.</p>
+          <ul>
+            <li>Claim up to <strong>₹1,50,000 per financial year</strong> against your taxable income.</li>
+            <li>Available under the Old Tax Regime for individual taxpayers and HUFs.</li>
+            <li>Premium must not exceed 10% of the sum assured to claim the full deduction.</li>
+          </ul>
+        </article>
+
+        <article class="tax-card accent">
+          <span class="tag">Section 10(10D)</span>
+          <h3>Tax-Free Maturity & Death Proceeds</h3>
+          <p>Maturity and death claim proceeds enjoy attractive exemptions under Section 10(10D) of the Income Tax Act, 1961.</p>
+          <ul>
+            <li><strong>Death Benefit:</strong> 100% tax-exempt in the hands of the nominee under all circumstances, with zero caps.</li>
+            <li><strong>Maturity Proceeds:</strong> 100% tax-free if the aggregate annual premium of your non-linked life insurance policies does not exceed ₹5,00,000 in any year.</li>
+            <li>Delivers pure, tax-shielded wealth directly into your hands at maturity.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="tax-disclaimer">
+        <strong>Tax Note:</strong> Tax exemptions and deductions are subject to conditions prescribed under the Income Tax Act, 1961 and prevailing tax laws. Tax laws are subject to amendments from time to time. Please consult your chartered accountant or tax advisor for customized advice.
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Optional Riders -->
+  <section id="riders" class="riders-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Extra Protection</span>
+        <h2>Customize With 6 Optional Riders</h2>
+        <p>Bolster your safety net by adding comprehensive rider covers to your base plan at a nominal additional cost.</p>
+      </div>
+      <div class="riders-grid">
+        <article class="rider-card">
+          <h3>Kotak Term Benefit Rider</h3>
+          <span class="rider-uin">UIN: 107B003V03</span>
+          <p>Provides additional pure term life cover over and above the base plan sum assured in case of the unfortunate demise of the life insured during the rider term.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Accidental Death Benefit Rider</h3>
+          <span class="rider-uin">UIN: 107B001V03</span>
+          <p>Pays an additional lump sum accidental benefit to the nominee if death occurs as a direct result of an accident, doubling financial security.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Permanent Disability Benefit Rider</h3>
+          <span class="rider-uin">UIN: 107B002V03</span>
+          <p>Provides periodic financial installments in the unfortunate event of total and permanent disability caused by an accident, replacing lost earning power.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Life Guardian Benefit Rider</h3>
+          <span class="rider-uin">UIN: 107B012V02</span>
+          <p>Waives all future premiums payable under the policy if the policyholder passes away, ensuring the policy continues smoothly until maturity for the child.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Accidental Disability Guardian Benefit Rider</h3>
+          <span class="rider-uin">UIN: 107B011V02</span>
+          <p>Waives all future premiums if the policyholder suffers total and permanent disability due to an accident, preventing policy lapse when finances are strained.</p>
+        </article>
+
+        <article class="rider-card">
+          <h3>Kotak Critical Illness Plus Benefit Rider</h3>
+          <span class="rider-uin">UIN: 107B020V01</span>
+          <p>Provides a lump sum payout on the first confirmed diagnosis of any of the covered critical illnesses, helping fund medical treatment without breaking savings.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Bottom CTA Banner -->
+  <section class="bottom-cta-sec">
+    <div class="wrap">
+      <div class="cta-banner">
+        <h2>Want to know if this plan fits you?</h2>
+        <p>Get a personalized benefit illustration showing your exact guaranteed maturity amount, annual additions, and premium quote for your target age and savings budget.</p>
+        <div class="btns">
+          <a class="btn red" data-link="wa" href="#" data-msg="Hi, I would like to know more about Kotak Assured Savings Plan.">WhatsApp Emerson</a>
+          <a class="btn line" data-link="tel" href="#">Call +91 94445 10089</a>
+        </div>
+        <div class="advisor-badge">
+          <span>Official IRDAI Licenced Advisor: <b data-field="name">Emerson</b> (<span data-field="insurer">Kotak Life</span>)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 12. Footer -->
+<footer>
+  <div class="wrap">
+    <p><span data-field="name">Emerson</span>, <span data-field="insurer">Kotak Life</span> insurance advisor. IRDAI licence no. <span data-field="licence">60350380</span>. Based in <span data-field="city">Chennai</span>.</p>
+    <p>Insurance is the subject matter of solicitation. Kotak Assured Savings Plan (UIN: 107N081V09) is a Non-Linked, Non-Participating, Individual Life Insurance Savings Plan. This is a personal advisor website and not the official website of Kotak Mahindra Life Insurance Company Limited. Product details are indicative; please read the sales brochure and policy documents carefully before concluding a sale.</p>
+  </div>
+</footer>
+
+<!-- 13. Mobile Action Bar -->
+<div class="bar">
+  <a class="btn red" data-link="tel" href="#">Call</a>
+  <a class="btn wa" data-link="wa" href="#">WhatsApp</a>
+</div>
+
+<!-- Scripts -->
+<script>
+var CONFIG = {
+  name: "Emerson",
+  insurer: "Kotak Life",
+  phone: "919444510089",
+  phoneShow: "+91 94445 10089",
+  email: "emerson.bagavathsingh@gmail.com",
+  city: "Chennai",
+  licence: "60350380",
+  years: "2+",
+  clients: "100+",
+  waMessage: "Hi, I would like to know more about Kotak Assured Savings Plan."
+};
+
+document.querySelectorAll("[data-field]").forEach(function(el){
+  var v = CONFIG[el.dataset.field];
+  if (v) el.textContent = v;
+});
+document.querySelectorAll("[data-link]").forEach(function(el){
+  var t = el.dataset.link;
+  if (t === "tel") el.href = "tel:+" + CONFIG.phone;
+  if (t === "mail") el.href = "mailto:" + CONFIG.email;
+  if (t === "wa") { el.href = "https://wa.me/" + CONFIG.phone + "?text=" + encodeURIComponent(el.dataset.msg || CONFIG.waMessage); el.target = "_blank"; el.rel = "noopener"; }
+});
+</script>
+</body>
+</html>

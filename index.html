@@ -74,7 +74,7 @@ section{padding:72px 0}
 .wealth{background:var(--paper)}
 .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px}
 .feature.blue{border-top-color:var(--navy)}
-.feature{border-radius:18px;padding:28px;background:var(--white);border-top:6px solid var(--red);box-shadow:0 10px 30px rgba(10,42,92,.08)}
+.feature{border-radius:18px;padding:28px;background:var(--white);border-top:6px solid var(--red);box-shadow:0 10px 30px rgba(10,42,92,.08);display:flex;flex-direction:column}
 .feature.navy{background:var(--navy);color:#fff;border-top-color:#fff}
 .feature h3{font-size:1.45rem;color:var(--navy)}
 .feature.navy h3{color:#fff}
@@ -82,7 +82,7 @@ section{padding:72px 0}
 .feature.navy .kind{color:#BFCBE2}
 .feature p.what{margin-top:16px}
 .feature ul{margin:18px 0 0 18px;display:grid;gap:8px}
-.feature .best{margin-top:20px;padding-top:16px;border-top:1px solid var(--mist);font-size:.95rem}
+.feature .best{margin-top:auto;padding-top:16px;border-top:1px solid var(--mist);font-size:.95rem}
 .feature.navy .best{border-top-color:rgba(255,255,255,.25)}
 .feature .uin{margin-top:10px;font-size:.8rem;color:#5A6785}
 .feature.navy .uin{color:#BFCBE2}
@@ -212,6 +212,7 @@ footer p+p{margin-top:8px}
           </ul>
           <p class="best"><b>Good fit if</b> you want a steady income stream along with long-term cover.</p>
           <a class="btn red" data-link="wa" href="#contact" data-msg="Hi, I would like to know more about Kotak GAIN (Get Assured Income Now).">Ask about GAIN</a>
+          <a class="btn line" href="gain.html" style="border-color:var(--navy);color:var(--navy)">Learn more →</a>
         </article>
         <article class="feature navy">
           <h3>Kotak Fortune Maximiser</h3>
@@ -225,6 +226,7 @@ footer p+p{margin-top:8px}
           <p class="best"><b>Good fit if</b> you are saving for a goal such as education, a milestone or retirement.</p>
           <p class="uin">UIN: 107N125V03</p>
           <a class="btn line" data-link="wa" href="#contact" data-msg="Hi, I would like to know more about Kotak Fortune Maximiser.">Ask about Fortune Maximiser</a>
+          <a class="btn line" href="fortune-maximiser.html" style="border-color:#fff;color:#fff">Learn more →</a>
         </article>
         <article class="feature blue">
           <h3>Kotak Assured Savings Plan</h3>
@@ -237,6 +239,7 @@ footer p+p{margin-top:8px}
           </ul>
           <p class="best"><b>Good fit if</b> you prefer certainty over market or bonus-linked returns.</p>
           <a class="btn red" data-link="wa" href="#contact" data-msg="Hi, I would like to know more about Kotak Assured Savings Plan.">Ask about Assured Savings</a>
+          <a class="btn line" href="assured-savings.html" style="border-color:var(--navy);color:var(--navy)">Learn more →</a>
         </article>
       </div>
       <p class="note">Bonuses under participating plans depend on the company's performance and are not guaranteed. Guaranteed benefits are payable as per policy terms, provided all due premiums are paid. Please read the sales brochure and policy terms for benefits, charges and exclusions before buying.</p>
